@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chain_lenghts",
+  "info": {
+    "singularName": "chain-lenght",
+    "pluralName": "chain-lenghts",
+    "displayName": "ChainLenght",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lenght": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "chain": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::chain.chain",
+      "inversedBy": "chain_lenghts"
+    }
+  }
+}

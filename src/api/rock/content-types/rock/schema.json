@@ -42,6 +42,18 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "rocks"
+    },
+    "chains": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::chain.chain",
+      "mappedBy": "rocks"
+    },
+    "earrings": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::earring.earring",
+      "mappedBy": "rocks"
     }
   }
 }
